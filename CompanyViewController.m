@@ -36,7 +36,7 @@
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     
-    self.companyList = @[@"Apple mobile devices",@"Samsung mobile devices"];
+    self.companyList = @[@"Apple",@"Samsung",@"HTC",@"Google"];
     self.title = @"Mobile device makers";
     
     
@@ -52,14 +52,14 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
+//#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
+//#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return [self.companyList count];
 }
@@ -127,11 +127,14 @@
 
 
     if (indexPath.row == 0){
-        self.productViewController.title = @"Apple mobile devices";
-    } else {
-        self.productViewController.title = @"Samsung mobile devices";
+        self.productViewController.title = @"Apple";
+    } else if (indexPath.row == 1) {
+        self.productViewController.title = @"Samsung";
+    } else if (indexPath.row == 2)
+        self.productViewController.title = @"HTC";
+    else {
+        self.productViewController.title = @"google";
     }
-    
     [self.navigationController
         pushViewController:self.productViewController
         animated:YES];
