@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B1CC9771CDCF6710088F518 /* Apple_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B1CC9731CDCF6710088F518 /* Apple_logo.png */; };
+		3B1CC9781CDCF6710088F518 /* Google_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B1CC9741CDCF6710088F518 /* Google_logo.png */; };
+		3B1CC9791CDCF6710088F518 /* HTC_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B1CC9751CDCF6710088F518 /* HTC_logo.png */; };
+		3B1CC97A1CDCF6710088F518 /* Samsung_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B1CC9761CDCF6710088F518 /* Samsung_logo.png */; };
+		3B1CC97E1CDCF69B0088F518 /* iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B1CC97B1CDCF69B0088F518 /* iPad.png */; };
+		3B1CC97F1CDCF69B0088F518 /* iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B1CC97C1CDCF69B0088F518 /* iPhone.png */; };
+		3B1CC9801CDCF69B0088F518 /* iPod_Touch.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B1CC97D1CDCF69B0088F518 /* iPod_Touch.png */; };
+		3B1CC9821CDCF6DD0088F518 /* Galaxy_S4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B1CC9811CDCF6DD0088F518 /* Galaxy_S4.png */; };
+		3B1CC9851CDCF9A40088F518 /* Galaxy_Note.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B1CC9831CDCF9A40088F518 /* Galaxy_Note.png */; };
+		3B1CC9861CDCF9A40088F518 /* Galaxy_Tab.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B1CC9841CDCF9A40088F518 /* Galaxy_Tab.png */; };
+		3B1CC98A1CDCFB990088F518 /* HTC_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B1CC9871CDCFB990088F518 /* HTC_10.png */; };
+		3B1CC98B1CDCFB990088F518 /* HTC_One_A9.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B1CC9881CDCFB990088F518 /* HTC_One_A9.png */; };
+		3B1CC98C1CDCFB990088F518 /* HTC_One_M9.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B1CC9891CDCFB990088F518 /* HTC_One_M9.png */; };
+		3B1CC9921CDCFCD60088F518 /* Nexus_6P.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B1CC98F1CDCFCD60088F518 /* Nexus_6P.png */; };
+		3B1CC9951CDCFD360088F518 /* Nexus_5X.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B1CC9931CDCFD360088F518 /* Nexus_5X.png */; };
+		3B1CC9961CDCFD360088F518 /* Pixel_C.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B1CC9941CDCFD360088F518 /* Pixel_C.png */; };
+		3B1CC9A01CDD0DBA0088F518 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1CC99E1CDD0DBA0088F518 /* WebViewController.m */; };
+		3B1CC9A11CDD0DBA0088F518 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1CC99F1CDD0DBA0088F518 /* WebViewController.xib */; };
+		3BA0CC7B1CDD749400AEFD63 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA0CC7A1CDD749400AEFD63 /* WebKit.framework */; };
 		48A656B518163BF200746D36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A656B418163BF200746D36 /* Foundation.framework */; };
 		48A656B718163BF200746D36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A656B618163BF200746D36 /* CoreGraphics.framework */; };
 		48A656B918163BF200746D36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A656B818163BF200746D36 /* UIKit.framework */; };
@@ -36,6 +55,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B1CC9731CDCF6710088F518 /* Apple_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Apple_logo.png; path = Company_logo/Apple_logo.png; sourceTree = SOURCE_ROOT; };
+		3B1CC9741CDCF6710088F518 /* Google_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Google_logo.png; path = Company_logo/Google_logo.png; sourceTree = SOURCE_ROOT; };
+		3B1CC9751CDCF6710088F518 /* HTC_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HTC_logo.png; path = Company_logo/HTC_logo.png; sourceTree = SOURCE_ROOT; };
+		3B1CC9761CDCF6710088F518 /* Samsung_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Samsung_logo.png; path = Company_logo/Samsung_logo.png; sourceTree = SOURCE_ROOT; };
+		3B1CC97B1CDCF69B0088F518 /* iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPad.png; path = Product_image/iPad.png; sourceTree = SOURCE_ROOT; };
+		3B1CC97C1CDCF69B0088F518 /* iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPhone.png; path = Product_image/iPhone.png; sourceTree = SOURCE_ROOT; };
+		3B1CC97D1CDCF69B0088F518 /* iPod_Touch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPod_Touch.png; path = Product_image/iPod_Touch.png; sourceTree = SOURCE_ROOT; };
+		3B1CC9811CDCF6DD0088F518 /* Galaxy_S4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Galaxy_S4.png; path = Product_image/Galaxy_S4.png; sourceTree = SOURCE_ROOT; };
+		3B1CC9831CDCF9A40088F518 /* Galaxy_Note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Galaxy_Note.png; path = Product_image/Galaxy_Note.png; sourceTree = SOURCE_ROOT; };
+		3B1CC9841CDCF9A40088F518 /* Galaxy_Tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Galaxy_Tab.png; path = Product_image/Galaxy_Tab.png; sourceTree = SOURCE_ROOT; };
+		3B1CC9871CDCFB990088F518 /* HTC_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HTC_10.png; path = Product_image/HTC_10.png; sourceTree = SOURCE_ROOT; };
+		3B1CC9881CDCFB990088F518 /* HTC_One_A9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HTC_One_A9.png; path = Product_image/HTC_One_A9.png; sourceTree = SOURCE_ROOT; };
+		3B1CC9891CDCFB990088F518 /* HTC_One_M9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HTC_One_M9.png; path = Product_image/HTC_One_M9.png; sourceTree = SOURCE_ROOT; };
+		3B1CC98F1CDCFCD60088F518 /* Nexus_6P.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Nexus_6P.png; path = Product_image/Nexus_6P.png; sourceTree = SOURCE_ROOT; };
+		3B1CC9931CDCFD360088F518 /* Nexus_5X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Nexus_5X.png; path = Product_image/Nexus_5X.png; sourceTree = SOURCE_ROOT; };
+		3B1CC9941CDCFD360088F518 /* Pixel_C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Pixel_C.png; path = Product_image/Pixel_C.png; sourceTree = SOURCE_ROOT; };
+		3B1CC99D1CDD0DBA0088F518 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		3B1CC99E1CDD0DBA0088F518 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		3B1CC99F1CDD0DBA0088F518 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		3BA0CC7A1CDD749400AEFD63 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		48A656B118163BF200746D36 /* NavCtrl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavCtrl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A656B418163BF200746D36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		48A656B618163BF200746D36 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA0CC7B1CDD749400AEFD63 /* WebKit.framework in Frameworks */,
 				48A656B718163BF200746D36 /* CoreGraphics.framework in Frameworks */,
 				48A656B918163BF200746D36 /* UIKit.framework in Frameworks */,
 				48A656B518163BF200746D36 /* Foundation.framework in Frameworks */,
@@ -84,6 +124,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B1CC99C1CDD0D7C0088F518 /* WebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3B1CC99D1CDD0DBA0088F518 /* WebViewController.h */,
+				3B1CC99E1CDD0DBA0088F518 /* WebViewController.m */,
+				3B1CC99F1CDD0DBA0088F518 /* WebViewController.xib */,
+			);
+			name = WebViewController;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		483796CB1BCBF7A00062D5AB /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +184,7 @@
 		48A656B318163BF200746D36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3BA0CC7A1CDD749400AEFD63 /* WebKit.framework */,
 				48A656B418163BF200746D36 /* Foundation.framework */,
 				48A656B618163BF200746D36 /* CoreGraphics.framework */,
 				48A656B818163BF200746D36 /* UIKit.framework */,
@@ -149,6 +201,7 @@
 				483796CD1BCBF7EB0062D5AB /* ProductViewController */,
 				48A656C618163BF200746D36 /* Images.xcassets */,
 				48A656E518163C1B00746D36 /* CompanyViewController.xib */,
+				3B1CC99C1CDD0D7C0088F518 /* WebViewController */,
 				48A656BB18163BF200746D36 /* Supporting Files */,
 			);
 			path = NavCtrl;
@@ -158,6 +211,22 @@
 			isa = PBXGroup;
 			children = (
 				48A656ED1816468000746D36 /* Sunflower.gif */,
+				3B1CC9731CDCF6710088F518 /* Apple_logo.png */,
+				3B1CC9741CDCF6710088F518 /* Google_logo.png */,
+				3B1CC9751CDCF6710088F518 /* HTC_logo.png */,
+				3B1CC9761CDCF6710088F518 /* Samsung_logo.png */,
+				3B1CC9811CDCF6DD0088F518 /* Galaxy_S4.png */,
+				3B1CC9831CDCF9A40088F518 /* Galaxy_Note.png */,
+				3B1CC9841CDCF9A40088F518 /* Galaxy_Tab.png */,
+				3B1CC97B1CDCF69B0088F518 /* iPad.png */,
+				3B1CC97C1CDCF69B0088F518 /* iPhone.png */,
+				3B1CC97D1CDCF69B0088F518 /* iPod_Touch.png */,
+				3B1CC9871CDCFB990088F518 /* HTC_10.png */,
+				3B1CC9881CDCFB990088F518 /* HTC_One_A9.png */,
+				3B1CC9891CDCFB990088F518 /* HTC_One_M9.png */,
+				3B1CC98F1CDCFCD60088F518 /* Nexus_6P.png */,
+				3B1CC9931CDCFD360088F518 /* Nexus_5X.png */,
+				3B1CC9941CDCFD360088F518 /* Pixel_C.png */,
 				48A656BC18163BF200746D36 /* NavCtrl-Info.plist */,
 				48A656BD18163BF200746D36 /* InfoPlist.strings */,
 				48A656C018163BF200746D36 /* main.m */,
@@ -260,10 +329,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B1CC9821CDCF6DD0088F518 /* Galaxy_S4.png in Resources */,
+				3B1CC97F1CDCF69B0088F518 /* iPhone.png in Resources */,
 				48A656EE1816468000746D36 /* Sunflower.gif in Resources */,
+				3B1CC9A11CDD0DBA0088F518 /* WebViewController.xib in Resources */,
+				3B1CC9921CDCFCD60088F518 /* Nexus_6P.png in Resources */,
+				3B1CC97A1CDCF6710088F518 /* Samsung_logo.png in Resources */,
+				3B1CC97E1CDCF69B0088F518 /* iPad.png in Resources */,
+				3B1CC9851CDCF9A40088F518 /* Galaxy_Note.png in Resources */,
+				3B1CC98A1CDCFB990088F518 /* HTC_10.png in Resources */,
+				3B1CC9781CDCF6710088F518 /* Google_logo.png in Resources */,
 				48A656E718163C1B00746D36 /* CompanyViewController.xib in Resources */,
+				3B1CC9961CDCFD360088F518 /* Pixel_C.png in Resources */,
 				48A656BF18163BF200746D36 /* InfoPlist.strings in Resources */,
+				3B1CC98C1CDCFB990088F518 /* HTC_One_M9.png in Resources */,
+				3B1CC9951CDCFD360088F518 /* Nexus_5X.png in Resources */,
+				3B1CC98B1CDCFB990088F518 /* HTC_One_A9.png in Resources */,
+				3B1CC9801CDCF69B0088F518 /* iPod_Touch.png in Resources */,
 				48A656C718163BF200746D36 /* Images.xcassets in Resources */,
+				3B1CC9771CDCF6710088F518 /* Apple_logo.png in Resources */,
+				3B1CC9791CDCF6710088F518 /* HTC_logo.png in Resources */,
+				3B1CC9861CDCF9A40088F518 /* Galaxy_Tab.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48A656E618163C1B00746D36 /* CompanyViewController.m in Sources */,
+				3B1CC9A01CDD0DBA0088F518 /* WebViewController.m in Sources */,
 				48A656C518163BF200746D36 /* NavControllerAppDelegate.m in Sources */,
 				48A656C118163BF200746D36 /* main.m in Sources */,
 				48A656EB18163F8700746D36 /* ProductViewController.m in Sources */,
