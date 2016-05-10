@@ -8,8 +8,13 @@
 
 #import "CompanyViewController.h"
 #import "ProductViewController.h"
+#import "Company.h"
+#import "Product.h"
+#import "DAO.h"
 
 @interface CompanyViewController ()
+
+@property (nonatomic, retain) DAO *dao;
 
 @end
 
@@ -29,6 +34,8 @@
 {
     [super viewDidLoad];
     
+    
+    
     // Uncomment the following line to preserve selection between presentations.
     self.clearsSelectionOnViewWillAppear = NO;
     
@@ -36,10 +43,15 @@
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     
-    self.companyList = [NSMutableArray arrayWithObjects:@"Apple",@"Samsung", @"HTC", @"Google", nil];
+    //    self.companyList = [NSMutableArray arrayWithObjects:@"Apple",@"Samsung", @"HTC", @"Google", nil];
     
     self.title = @"Mobile device makers";
     
+    self.dao = [DAO sharedManager];
+
+    [self.dao getAllCompanyAndProducts];
+    
+       
     
 }
 
@@ -62,7 +74,10 @@
 {
     //#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [self.companyList count];
+//    return [self.companyList count];
+    
+    return [self.dao.companylist count];
+
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -75,7 +90,10 @@
     
     // Configure the cell...
     
-    cell.textLabel.text = [self.companyList objectAtIndex:[indexPath row]];
+//    cell.textLabel.text = [[self.companyList objectAtIndex:[indexPath row]] companyName] ;
+    
+    cell.textLabel.text = [[self.dao.companylist objectAtIndex:[indexPath row]] companyName] ;
+
     
     // Add image to UITableView rows
     
@@ -111,7 +129,10 @@
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
-        [self.companyList removeObjectAtIndex: indexPath.row];
+//        [self.companyList removeObjectAtIndex: indexPath.row];
+//        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
+        [self.dao.companylist removeObjectAtIndex: indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
@@ -124,9 +145,16 @@
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
 {
-    NSString *stringToMove = [self.companyList objectAtIndex:fromIndexPath.row];
-    [self.companyList removeObjectAtIndex:fromIndexPath.row];
-    [self.companyList insertObject:stringToMove atIndex:toIndexPath.row];
+//    NSString *stringToMove = [self.companyList objectAtIndex:fromIndexPath.row];
+//    [self.companyList removeObjectAtIndex:fromIndexPath.row];
+//    [self.companyList insertObject:stringToMove atIndex:toIndexPath.row];
+    
+    NSString *stringToMove = [self.dao.companylist objectAtIndex:fromIndexPath.row];
+    [self.dao.companylist removeObjectAtIndex:fromIndexPath.row];
+    [self.dao.companylist insertObject:stringToMove atIndex:toIndexPath.row];
+
+    
+    
 }
 
 
@@ -146,7 +174,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // fixes the issue when rearraging company cell the companyName matches product
-    NSString *companyName = [self.companyList objectAtIndex:[indexPath row]];
+    Company *company = [self.dao.companylist objectAtIndex:[indexPath row]];
+    NSString *companyName = [company companyName]; 
     
     if ([companyName isEqualToString:@"Apple"]){
         self.productViewController.title = @"Apple";
