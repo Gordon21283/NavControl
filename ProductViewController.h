@@ -15,7 +15,7 @@
 @property (nonatomic, retain) NSMutableArray *appleProducts;
 @property (nonatomic, retain) NSMutableArray *samsungProducts;
 @property (nonatomic, retain) NSMutableArray *htcProducts;
-@property (nonatomic, retain) NSMutableArray *googleProducts; 
+@property (nonatomic, retain) NSMutableArray *googleProducts;
 
 
 @end

@@ -24,8 +24,8 @@ static DAO *sharedMyManager = nil;
 
 + (id)sharedManager {
     //ensures object is created only once
-    @synchronized(self) {
-        if(sharedMyManager == nil)
+//    @synchronized(self) {
+    if(sharedMyManager == nil){
             sharedMyManager = [[super allocWithZone:NULL] init];
     }
     return sharedMyManager;
@@ -37,38 +37,38 @@ static DAO *sharedMyManager = nil;
     
     NSMutableArray *appleProductsArray = [[NSMutableArray alloc]init];
     
-    [appleProductsArray addObject:[[Product alloc]initWithCompanyid:1 withProductName:@"iPad" withProductURL:@"http://www.apple.com/ipad/"]];
+    [appleProductsArray addObject:[[Product alloc]initWithCompanyid:1 withProductName:@"iPad" withProductImage:@"iPad.png" withProductURL:@"http://www.apple.com/ipad/"]];
     
-    [appleProductsArray addObject:[[Product alloc]initWithCompanyid:1 withProductName:@"IPod Touch" withProductURL:@"http://www.apple.com/ipod-touch/"]];
+    [appleProductsArray addObject:[[Product alloc]initWithCompanyid:1 withProductName:@"IPod Touch" withProductImage:@"iPod_Touch.png" withProductURL:@"http://www.apple.com/ipod-touch/"]];
     
-    [appleProductsArray addObject:[[Product alloc]initWithCompanyid:1 withProductName:@"IPhone" withProductURL:@"http://www.apple.com/iphone/"]];
+    [appleProductsArray addObject:[[Product alloc]initWithCompanyid:1 withProductName:@"IPhone" withProductImage:@"iPhone" withProductURL:@"http://www.apple.com/iphone/"]];
     
     // Samsung products
     NSMutableArray *samsungProductsArray = [[NSMutableArray alloc]init];
     
-    [samsungProductsArray addObject:[[Product alloc]initWithCompanyid:2 withProductName:@"Galaxy S4" withProductURL:@"http://www.gsmarena.com/samsung_i9500_galaxy_s4-5125.php"]];
+    [samsungProductsArray addObject:[[Product alloc]initWithCompanyid:2 withProductName:@"Galaxy S4" withProductImage:@"Galaxy_S4.png" withProductURL:@"http://www.gsmarena.com/samsung_i9500_galaxy_s4-5125.php"]];
     
-    [samsungProductsArray addObject:[[Product alloc]initWithCompanyid:2 withProductName:@"Galaxy Note" withProductURL:@"http://www.gsmarena.com/samsung_galaxy_note5-7431.php"]];
+    [samsungProductsArray addObject:[[Product alloc]initWithCompanyid:2 withProductName:@"Galaxy Note" withProductImage:@"Galaxy_Note.png" withProductURL:@"http://www.gsmarena.com/samsung_galaxy_note5-7431.php"]];
     
-    [samsungProductsArray addObject:[[Product alloc]initWithCompanyid:2 withProductName:@"Galaxy Tab" withProductURL:@"http://www.gsmarena.com/samsung_p1000_galaxy_tab-3370.php"]];
+    [samsungProductsArray addObject:[[Product alloc]initWithCompanyid:2 withProductName:@"Galaxy Tab" withProductImage:@"Galaxy_Tab.png" withProductURL:@"http://www.gsmarena.com/samsung_p1000_galaxy_tab-3370.php"]];
     
     // HTC products
     NSMutableArray *htcProductsArray = [[NSMutableArray alloc]init];
     
-    [htcProductsArray addObject:[[Product alloc]initWithCompanyid:3 withProductName:@"HTC 10" withProductURL: @"http://www.htc.com/us/smartphones/htc-10/"]];
+    [htcProductsArray addObject:[[Product alloc]initWithCompanyid:3 withProductName:@"HTC 10" withProductImage:@"HTC_10.png" withProductURL: @"http://www.htc.com/us/smartphones/htc-10/"]];
     
-    [htcProductsArray addObject:[[Product alloc]initWithCompanyid:3 withProductName:@"HTC One A9" withProductURL:@"http://www.htc.com/us/smartphones/htc-one-a9/"]];
+    [htcProductsArray addObject:[[Product alloc]initWithCompanyid:3 withProductName:@"HTC One A9" withProductImage:@"HTC_One.png" withProductURL:@"http://www.htc.com/us/smartphones/htc-one-a9/"]];
     
-    [htcProductsArray addObject:[[Product alloc]initWithCompanyid:3 withProductName:@"HTC One M9" withProductURL:@"http://www.htc.com/us/smartphones/htc-one-m9/"]];
+    [htcProductsArray addObject:[[Product alloc]initWithCompanyid:3 withProductName:@"HTC One M9" withProductImage:@"HTC_One_M9.png" withProductURL:@"http://www.htc.com/us/smartphones/htc-one-m9/"]];
     
     //  Google products
     
     NSMutableArray *googleProductsArray = [[NSMutableArray alloc]init];
     
-    [googleProductsArray addObject:[[Product alloc]initWithCompanyid:4 withProductName:@"Nexus 6P" withProductURL: @"https://store.google.com/product/nexus_6p"]];
+    [googleProductsArray addObject:[[Product alloc]initWithCompanyid:4 withProductName:@"Nexus 6P" withProductImage:@"Nexus_6P.png" withProductURL: @"https://store.google.com/product/nexus_6p"]];
     
-    [googleProductsArray addObject:[[Product alloc]initWithCompanyid:4 withProductName:@"Nexus 5X" withProductURL:@"https://store.google.com/product/nexus_5x"]];
-    [googleProductsArray addObject:[[Product alloc]initWithCompanyid:4 withProductName:@"Pixel C" withProductURL:@"https://store.google.com/product/pixel_c"]];
+    [googleProductsArray addObject:[[Product alloc]initWithCompanyid:4 withProductName:@"Nexus 5X" withProductImage:@"Nexus_5.png" withProductURL:@"https://store.google.com/product/nexus_5x"]];
+    [googleProductsArray addObject:[[Product alloc]initWithCompanyid:4 withProductName:@"Pixel C" withProductImage:@"Pixel_C.png" withProductURL:@"https://store.google.com/product/pixel_c"]];
     
     self.companylist = [[NSMutableArray alloc]init];
     

@@ -13,9 +13,10 @@
 @property int companyid;
 
 @property (nonatomic, retain) NSString *productName;
+@property (nonatomic, retain) NSString *productImage;
 @property (nonatomic, retain) NSString *productURL;
 
 
--(instancetype)initWithCompanyid:(int)companyName withProductName:(NSString *)productName withProductURL:(NSString *)productURL;
+-(instancetype)initWithCompanyid:(int)companyName withProductName:(NSString *)productName withProductImage:(NSString *)productImage withProductURL:(NSString *)productURL;
 
 @end

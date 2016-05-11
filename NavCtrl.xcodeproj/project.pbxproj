@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B02C77D1CE289B800734B8F /* AddNewCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B02C77B1CE289B800734B8F /* AddNewCompany.m */; };
+		3B02C77E1CE289B800734B8F /* AddNewCompany.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B02C77C1CE289B800734B8F /* AddNewCompany.xib */; };
 		3B1453DD1CE0F2BA00BEC1A0 /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1453DC1CE0F2BA00BEC1A0 /* Company.m */; };
 		3B1453E01CE0F2CD00BEC1A0 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1453DF1CE0F2CD00BEC1A0 /* Product.m */; };
 		3B1453E31CE12FCA00BEC1A0 /* DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1453E21CE12FCA00BEC1A0 /* DAO.m */; };
@@ -58,6 +60,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B02C77A1CE289B800734B8F /* AddNewCompany.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewCompany.h; sourceTree = "<group>"; };
+		3B02C77B1CE289B800734B8F /* AddNewCompany.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewCompany.m; sourceTree = "<group>"; };
+		3B02C77C1CE289B800734B8F /* AddNewCompany.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNewCompany.xib; sourceTree = "<group>"; };
 		3B1453DB1CE0F2BA00BEC1A0 /* Company.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Company.h; sourceTree = "<group>"; };
 		3B1453DC1CE0F2BA00BEC1A0 /* Company.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Company.m; sourceTree = "<group>"; };
 		3B1453DE1CE0F2CD00BEC1A0 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
@@ -133,6 +138,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B02C7791CE2873600734B8F /* AddNewCompanyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3B02C77A1CE289B800734B8F /* AddNewCompany.h */,
+				3B02C77B1CE289B800734B8F /* AddNewCompany.m */,
+				3B02C77C1CE289B800734B8F /* AddNewCompany.xib */,
+			);
+			name = AddNewCompanyViewController;
+			sourceTree = "<group>";
+		};
+		3B02C77F1CE289E800734B8F /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				3B1453E11CE12FCA00BEC1A0 /* DAO.h */,
+				3B1453E21CE12FCA00BEC1A0 /* DAO.m */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
 		3B1CC99C1CDD0D7C0088F518 /* WebViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,12 +180,13 @@
 		483796CC1BCBF7C70062D5AB /* ParentViewController */ = {
 			isa = PBXGroup;
 			children = (
-				3B1453DB1CE0F2BA00BEC1A0 /* Company.h */,
-				3B1453DC1CE0F2BA00BEC1A0 /* Company.m */,
 				48A656E318163C1B00746D36 /* CompanyViewController.h */,
 				48A656E418163C1B00746D36 /* CompanyViewController.m */,
-				3B1453E11CE12FCA00BEC1A0 /* DAO.h */,
-				3B1453E21CE12FCA00BEC1A0 /* DAO.m */,
+				3B1453DB1CE0F2BA00BEC1A0 /* Company.h */,
+				3B1453DC1CE0F2BA00BEC1A0 /* Company.m */,
+				483796CD1BCBF7EB0062D5AB /* ProductViewController */,
+				3B02C77F1CE289E800734B8F /* DAO */,
+				3B02C7791CE2873600734B8F /* AddNewCompanyViewController */,
 			);
 			name = ParentViewController;
 			sourceTree = "<group>";
@@ -169,10 +194,11 @@
 		483796CD1BCBF7EB0062D5AB /* ProductViewController */ = {
 			isa = PBXGroup;
 			children = (
-				3B1453DE1CE0F2CD00BEC1A0 /* Product.h */,
-				3B1453DF1CE0F2CD00BEC1A0 /* Product.m */,
 				48A656E818163F8700746D36 /* ProductViewController.h */,
 				48A656E918163F8700746D36 /* ProductViewController.m */,
+				3B1453DE1CE0F2CD00BEC1A0 /* Product.h */,
+				3B1453DF1CE0F2CD00BEC1A0 /* Product.m */,
+				3B1CC99C1CDD0D7C0088F518 /* WebViewController */,
 			);
 			name = ProductViewController;
 			sourceTree = "<group>";
@@ -213,10 +239,8 @@
 			children = (
 				483796CB1BCBF7A00062D5AB /* AppDelegate */,
 				483796CC1BCBF7C70062D5AB /* ParentViewController */,
-				483796CD1BCBF7EB0062D5AB /* ProductViewController */,
 				48A656C618163BF200746D36 /* Images.xcassets */,
 				48A656E518163C1B00746D36 /* CompanyViewController.xib */,
-				3B1CC99C1CDD0D7C0088F518 /* WebViewController */,
 				48A656BB18163BF200746D36 /* Supporting Files */,
 			);
 			path = NavCtrl;
@@ -344,6 +368,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B02C77E1CE289B800734B8F /* AddNewCompany.xib in Resources */,
 				3B1CC9821CDCF6DD0088F518 /* Galaxy_S4.png in Resources */,
 				3B1CC97F1CDCF69B0088F518 /* iPhone.png in Resources */,
 				48A656EE1816468000746D36 /* Sunflower.gif in Resources */,
@@ -388,6 +413,7 @@
 				3B1453DD1CE0F2BA00BEC1A0 /* Company.m in Sources */,
 				3B1CC9A01CDD0DBA0088F518 /* WebViewController.m in Sources */,
 				3B1453E31CE12FCA00BEC1A0 /* DAO.m in Sources */,
+				3B02C77D1CE289B800734B8F /* AddNewCompany.m in Sources */,
 				48A656C518163BF200746D36 /* NavControllerAppDelegate.m in Sources */,
 				48A656C118163BF200746D36 /* main.m in Sources */,
 				48A656EB18163F8700746D36 /* ProductViewController.m in Sources */,

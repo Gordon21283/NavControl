@@ -90,25 +90,11 @@
     
     // Configure the cell...
     
-//    cell.textLabel.text = [[self.companyList objectAtIndex:[indexPath row]] companyName] ;
-    
-    cell.textLabel.text = [[self.dao.companylist objectAtIndex:[indexPath row]] companyName] ;
+    cell.textLabel.text = [[self.dao.companylist objectAtIndex:[indexPath row]] companyName];
+   
+    // Add Company logo
+    cell.imageView.image = [UIImage imageNamed: [[self.dao.companylist objectAtIndex:[indexPath row]] companyLogo]];
 
-    
-    // Add image to UITableView rows
-    
-    if([cell.textLabel.text isEqualToString:@"Apple"]) {
-        cell.imageView.image = [UIImage imageNamed: @"Apple_logo.png"];
-    }
-    else if ([cell.textLabel.text isEqualToString:@"Samsung"]) {
-        cell.imageView.image = [UIImage imageNamed:@"Samsung_logo.png"];
-    }
-    else if ([cell.textLabel.text isEqualToString:@"HTC"]) {
-        cell.imageView.image = [UIImage imageNamed:@"HTC_logo.png"];
-    }
-    else {
-        cell.imageView.image = [UIImage imageNamed:@"google_logo.png"];
-    }
     
     return cell;
 }
@@ -129,8 +115,6 @@
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
-//        [self.companyList removeObjectAtIndex: indexPath.row];
-//        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
         
         [self.dao.companylist removeObjectAtIndex: indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
@@ -145,9 +129,6 @@
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
 {
-//    NSString *stringToMove = [self.companyList objectAtIndex:fromIndexPath.row];
-//    [self.companyList removeObjectAtIndex:fromIndexPath.row];
-//    [self.companyList insertObject:stringToMove atIndex:toIndexPath.row];
     
     NSString *stringToMove = [self.dao.companylist objectAtIndex:fromIndexPath.row];
     [self.dao.companylist removeObjectAtIndex:fromIndexPath.row];
@@ -175,18 +156,13 @@
 {
     // fixes the issue when rearraging company cell the companyName matches product
     Company *company = [self.dao.companylist objectAtIndex:[indexPath row]];
-    NSString *companyName = [company companyName]; 
+    NSString *companyName = [company companyName];
     
-    if ([companyName isEqualToString:@"Apple"]){
-        self.productViewController.title = @"Apple";
-    } else if ([companyName isEqualToString:@"Samsung"]) {
-        self.productViewController.title = @"Samsung";
-    } else if ([companyName isEqualToString:@"HTC"]) {
-        self.productViewController.title = @"HTC";
-    }
-    else {
-        self.productViewController.title = @"Google";
-    }
+    self.productViewController.title = companyName; 
+    self.productViewController.products = company.companyProducts;
+    
+    
+    
     
     [self.navigationController
      pushViewController:self.productViewController
