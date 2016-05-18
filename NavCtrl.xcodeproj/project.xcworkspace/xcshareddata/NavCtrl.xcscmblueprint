@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "935B1C6F8C1DB2DF6006096951B3F7029AA6BB78",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C9AADC4BEC29F7DBBD3D4E85C53E3207926B7E67" : 0,
+    "935B1C6F8C1DB2DF6006096951B3F7029AA6BB78" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CA8162B2-1DA0-40BD-8CAB-78C12FF85A41",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C9AADC4BEC29F7DBBD3D4E85C53E3207926B7E67" : "",
+    "935B1C6F8C1DB2DF6006096951B3F7029AA6BB78" : "NavCtrl\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "NavCtrl",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "NavCtrl.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Gordon21283\/gordon212.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "935B1C6F8C1DB2DF6006096951B3F7029AA6BB78"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Gordon21283\/NavCtrl.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C9AADC4BEC29F7DBBD3D4E85C53E3207926B7E67"
+    }
+  ]
+}
