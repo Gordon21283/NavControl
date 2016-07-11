@@ -10,12 +10,13 @@
 
 @implementation Product
 
--(instancetype)initWithCompanyid:(int)companyid withProductName:(NSString *)productName withProductImage:(NSString *)productImage withProductURL:(NSString *)productURL {
+-(instancetype)initWithCompanyid:(int)companyId andProductName:(NSString *)productName andProductImage:(NSString *)productImage andProductURL:(NSString *)productURL andProductID:(int)productID {
 
-    self.companyid = companyid;
+    self.companyid = companyId;
     self.productName = productName;
     self.productImage = productImage; 
     self.productURL = productURL;
+    self.productID = productID;
     
     return self;
 

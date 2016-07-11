@@ -10,11 +10,12 @@
 
 @implementation Company
 
--(instancetype)initWithCompanyName:(NSString *)companyName withCompanyLogo:(NSString *)companyLogo withCompanyProducts:(NSMutableArray *)companyProducts {
+-(instancetype)initWithCompanyName:(NSString *)companyName andCompanyLogo:(NSString *)companyLogo andstockSymbol:(NSString *)stockSymbol{
  
     self.companyName = companyName;
     self.companyLogo = companyLogo;
-    self.companyProducts = companyProducts;
+    self.stockSymbol = stockSymbol;
+    self.companyProducts = [[NSMutableArray alloc]init]; 
 
     return self;
 }

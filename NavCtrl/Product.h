@@ -15,8 +15,9 @@
 @property (nonatomic, retain) NSString *productName;
 @property (nonatomic, retain) NSString *productImage;
 @property (nonatomic, retain) NSString *productURL;
+@property (nonatomic) int productID;
 
 
--(instancetype)initWithCompanyid:(int)companyName withProductName:(NSString *)productName withProductImage:(NSString *)productImage withProductURL:(NSString *)productURL;
+-(instancetype)initWithCompanyid:(int)companyId andProductName:(NSString *)productName andProductImage:(NSString *)productImage andProductURL:(NSString *)productURL andProductID:(int)productID;
 
 @end
